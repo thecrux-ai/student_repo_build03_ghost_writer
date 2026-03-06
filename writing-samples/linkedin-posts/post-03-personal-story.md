@@ -1,25 +1,29 @@
-# LinkedIn Post 03 — Personal Story
+# LinkedIn Post 03 — Career Mistake
 
-**Context**: Nisha shares a career lesson about bad advice she once followed. Vulnerable, reflective, but ultimately forward-looking. Not a humble-brag — a genuine mistake she learned from.
+**Context**: Arjun shares a genuine career mistake — the time he built a feature nobody asked for instead of listening to customer data. Vulnerable, self-aware, not a humble-brag. The lesson is about listening to data over instinct.
 
 ---
 
-Three years ago, someone I deeply respected told me: "Nisha, you need to tone it down in meetings. You're too direct. It makes people uncomfortable."
+Four years ago, I spent an entire quarter building a feature that nobody asked for.
 
-So I tried. For about six months, I softened every opinion. I replaced "I think we should" with "maybe we could consider." I stopped pushing back in real time and started sending follow-up emails instead — you know, the polite kind that everyone ignores.
+I was leading product at my previous company. We had solid analytics data showing that customers were struggling with report generation — 40% of support tickets were about exports. The obvious fix was to improve the export flow.
 
-You know what happened? I got passed over for a promotion. The feedback — and this still stings a little — was that I "wasn't showing enough leadership presence."
+Instead, I convinced myself (and my team, and my CEO) that what customers really needed was an AI-powered insights dashboard. Something that would make manual reports obsolete. I had a vision. I had a deck. I had conviction.
 
-Let me make sure you're following: I was told to be less direct, did exactly that, and was then penalized for not being direct enough.
+What I didn't have was a single customer asking for it.
 
-Here's the thing: the advice wasn't malicious. The person who gave it was trying to help me navigate a corporate culture that genuinely did reward a specific (quieter, more consensus-driven) communication style. They were right about the culture. They were wrong about what I should do about it.
+We shipped it in 14 weeks. Adoption after 90 days: 6%. Six percent. We'd spent INR 22 lakhs in engineering time building something that 94% of our customers ignored completely.
 
-The lesson I actually needed — and it took a career change to learn it — was that the right response to "your style doesn't fit here" isn't always "change your style." Sometimes it's "change your here."
+Meanwhile, the export bug sat untouched. Support tickets kept climbing. Two mid-market accounts churned specifically citing "basic reporting functionality" as the reason. Those were their words. Basic.
 
-I left that company 4 months later. Joined a startup where my directness wasn't a bug — it was the thing that got me hired. Within a year, I was leading the growth team.
+Here's what I learned, and it took me longer than it should have: there's a difference between product vision and product vanity. Vision is building something customers need before they know they need it. Vanity is building something you find interesting and assuming customers will too.
 
-Look, I'm not saying never adapt. Reading the room matters. But there's a difference between adapting your delivery and amputating your personality.
+Just being transparent: I still catch myself doing this. Last month I was three slides into a pitch for a predictive analytics module when Priya — my sharpest PM — asked me one question: "How many customers have asked for this?" The answer was two. Out of 200+.
 
-If you've ever received advice that felt wrong but you followed it anyway — what happened?
+We shelved it. Built the thing 30 customers had actually requested instead.
 
-#CareerLessons #Leadership #Authenticity #WomenInTech
+My read: the best product instinct isn't knowing what to build. It's knowing when your instinct is wrong.
+
+What's a feature you were sure about that completely flopped? Genuinely curious — I learn more from these stories than from any success post.
+
+#ProductManagement #StartupLessons #BuildingProduct #Leadership

@@ -1,47 +1,39 @@
 # Ghost Writer — Case Study
 
-## Meet Nisha Kapoor
+## You Already Know Arjun
 
-Nisha Kapoor is Head of Growth at **GreenGrid**, a Series A climate-tech startup based in Mumbai. GreenGrid builds smart energy management systems for commercial buildings — think AI that learns a building's energy patterns and cuts waste without anyone noticing the lights dimmed.
+You met Arjun Mehta in Build 1. He's the VP of Product at a Series B B2B SaaS company in Bangalore — 12-person team, board pressure from Sequoia and Accel, an Acme Corp renewal that keeps him up at night, and a self-serve onboarding project (Project Alpha) that the board is watching closely.
 
-Nisha is 37, manages a team of 8, and reports directly to the CEO. Before GreenGrid, she spent six years in B2B SaaS growth roles — first at a workforce analytics company in Bangalore, then leading demand gen at a logistics platform that scaled from 200 to 3,000 customers during her tenure.
+In Build 1, you organized Arjun's chaotic workspace. Now you're going to teach Claude his voice.
 
-She joined GreenGrid because climate-tech felt like the last industry where growth marketing could matter beyond quarterly revenue targets. Her words: "I wanted my work to compound into something my daughter would thank me for."
-
----
-
-## Why Nisha's Writing Matters
-
-Here's the thing about being Head of Growth at a startup: your writing IS your work product. Every client email, every LinkedIn post, every internal update — it all carries weight. Nisha writes 40+ emails a day and posts on LinkedIn 3-4 times a week. Her writing has directly closed deals, recruited two senior hires, and built GreenGrid's brand in the Indian climate-tech space.
-
-Nisha doesn't think of herself as a "writer." She thinks of herself as someone who communicates clearly and gives a damn. But she has a distinctive voice — one that's warm without being soft, direct without being cold, and mission-driven without being preachy.
+Arjun writes 30+ emails a day and has started posting on LinkedIn as the company scales. His writing is direct, data-driven, and action-oriented — but never cold. He leads with numbers and ends with next steps, but always makes room for the human side: acknowledging someone's effort, admitting his own mistakes, giving context so people understand the "why."
 
 ---
 
-## Nisha's 7 Voice Patterns
+## Arjun's 7 Voice Patterns
 
-Through analyzing her writing across emails and LinkedIn posts, seven consistent patterns emerge:
+Through analyzing his writing across emails, Slack threads, meeting notes, and internal documents, seven consistent patterns emerge:
 
 | # | Pattern | Description |
 |---|---------|-------------|
-| 1 | **Human-first openings** | Opens with the human angle, then pivots to business — never leads with numbers |
-| 2 | **Staccato-then-legato rhythm** | Short punchy sentences mixed with one longer flowing thought |
-| 3 | **Signature transitions** | Uses "Look," and "Here's the thing:" as transition phrases for directness |
-| 4 | **Hyper-specific numbers** | Always concrete ("23% in 8 weeks" not "significant growth") |
-| 5 | **Forward-looking closings** | Ends with a forward-looking question, never a summary |
-| 6 | **Warm-direct tone** | No corporate jargon, no sloppiness, uses contractions freely |
-| 7 | **Strategic punctuation** | Em-dashes for mid-sentence commentary, parentheses for self-aware humor |
+| 1 | **Data-first framing** | Leads with specific numbers and evidence, then layers in interpretation ("My read: we can save this account") |
+| 2 | **Structured directness** | Short declarative sentences, bullet points, clear headers. Rarely meanders. Gets to the point fast. |
+| 3 | **Signature phrases** | "My read:", "Just being transparent", "Fair ask", "Here's what I need:", "Need to move faster" |
+| 4 | **Parenthetical context** | Constant parenthetical asides for deadlines, caveats, and quick context: "(due Feb 10)", "(non-negotiable)", "(Anika still hasn't responded)" |
+| 5 | **Empathy under pressure** | Acknowledges people's constraints and feelings even when driving urgency. Never cold, never soft — balanced. |
+| 6 | **Forward-looking action items** | Always ends with clear next steps, owners, and deadlines. Never just summarizes — pushes toward what happens next. |
+| 7 | **Honest self-awareness** | Admits mistakes, flags what he should have done sooner, owns his part of problems. No blame-shifting. |
 
-You'll see all seven patterns woven through her writing samples. Some are obvious on first read. Others only emerge when you compare multiple samples side by side — which is exactly what you'll ask Claude to do.
+You'll see all seven patterns woven through his writing samples. Some are obvious on first read. Others only emerge when you compare multiple samples side by side — which is exactly what you'll ask Claude to do.
 
 ---
 
-## What You'll Build With Nisha's Voice
+## What You'll Build With Arjun's Voice
 
-In this session, you'll use Nisha's writing samples to build two Claude Code slash commands:
+In this session, you'll use Arjun's writing samples to build two Claude Code slash commands:
 
-1. **`/email-ghostwriter`** — Generates emails in Nisha's voice, adapting tone for different contexts (formal proposals, casual updates, difficult conversations)
-2. **`/linkedin-ghostwriter`** — Generates LinkedIn posts in Nisha's voice, matching her posting style across thought leadership, team wins, and personal stories
+1. **`/email-ghostwriter`** — Generates emails in Arjun's voice, adapting tone for different contexts (client pitches, team updates, difficult conversations)
+2. **`/linkedin-ghostwriter`** — Generates LinkedIn posts in Arjun's voice, matching his posting style across thought leadership, team wins, and personal stories
 
 Then — and this is where it gets real — you'll swap in YOUR writing samples and rebuild the skills with YOUR voice.
 
@@ -51,22 +43,22 @@ Then — and this is where it gets real — you'll swap in YOUR writing samples 
 
 | File | What's Inside |
 |------|---------------|
-| `casestudy.md` | You're reading it — Nisha's background and voice patterns |
+| `casestudy.md` | You're reading it — Arjun's background and voice patterns |
 | `student-handbook.md` | Your 60-minute session guide with step-by-step instructions |
-| `writing-samples/emails/` | 5 emails from Nisha covering different contexts |
-| `writing-samples/linkedin-posts/` | 5 LinkedIn posts from Nisha covering different formats |
+| `writing-samples/emails/` | 5 emails from Arjun covering different contexts |
+| `writing-samples/linkedin-posts/` | 5 LinkedIn posts from Arjun covering different formats |
 | `reference-skills/` | Reference skill files — don't peek until Part 4! |
 
 ---
 
-## Why This Works for You
+## Why This Works
 
-You're not just learning to build slash commands (though you will). You're learning a repeatable pattern:
+You already know Arjun's world — his team, his stakeholders, his pressures. That means you can focus entirely on voice patterns instead of spending time learning a new character. When Claude generates an email to Deepak about the Acme renewal, you'll know immediately if it sounds right because you've already read Arjun's real emails to Deepak.
+
+And the pattern you'll learn here is fully repeatable:
 
 **Writing samples → Voice analysis → Skill file → Test → Iterate**
 
-This pattern works for any writing voice — yours, your CEO's, your client's. Once you've done it for Nisha, doing it for yourself takes 10 minutes. And once you've built one skill file, the pattern transfers to any custom slash command you want to create.
-
-The goal isn't to replace your writing. It's to give you a first draft that already sounds like you — so you can spend your editing time on ideas, not voice.
+Once you've done it for Arjun, doing it for yourself takes 10 minutes. The goal isn't to replace your writing. It's to give you a first draft that already sounds like you — so you can spend your editing time on ideas, not voice.
 
 Let's get started.

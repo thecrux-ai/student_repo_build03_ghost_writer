@@ -1,27 +1,29 @@
 # LinkedIn Post 05 — Contrarian Take
 
-**Context**: Nisha challenges the popular narrative that "content marketing is dead" in B2B. She's responding to a trend she's been seeing in her LinkedIn feed and wants to push back with evidence and a strong point of view.
+**Context**: Arjun challenges the common B2B SaaS habit of treating roadmaps as strategy. He's seen too many product teams ship features without a clear thesis on what problem they're solving. Strong opinion, backed by evidence from his own experience.
 
 ---
 
-I keep seeing posts declaring "content is dead in B2B." Usually posted by someone selling a course on paid ads.
+Your roadmap isn't a strategy.
 
-Let me share what actually happened at GreenGrid last month.
+I keep seeing this in B2B SaaS: a product team ships 40 features in a year, presents a packed roadmap to the board, and everyone nods. Velocity looks great. The backlog is moving. Customers requested these things.
 
-A facilities manager at one of India's largest hotel chains read a blog post we published in January about HVAC energy waste patterns in hospitality. He shared it with his VP. The VP shared it with their Head of Sustainability. The Head of Sustainability's team read three more of our pieces, then reached out to us directly.
+Then churn stays flat. NRR doesn't move. And someone in the room asks, "Why aren't customers sticking around if we're shipping so much?"
 
-That thread — from one blog post to a meeting with their C-suite — took 47 days. We didn't run a single ad. We didn't send a single cold email. A piece of content did the entire job.
+I can answer that because I've been that product leader.
 
-Here's the thing: content isn't dead. Boring content is dead. Content that reads like it was written by a committee and approved by legal — that's dead. Content that says "leverage synergies to optimize outcomes" — extremely dead.
+Last year, we shipped 23 features in two quarters. Our net revenue retention was 89%. This year, we shipped 11. NRR is 94%. We built less and retained more. Here's why.
 
-But a 1,200-word piece that makes a facilities manager stop scrolling because it describes a problem he deals with every Tuesday at 3 PM? That's more alive than ever.
+The 23 features were a response list. Customer A wants CSV exports. Customer B wants role-based access. Customer C wants a better mobile app. Each request was valid. None of them connected to a thesis about why customers churn or what makes them expand.
 
-The people declaring content dead are usually measuring it wrong. They're looking at page views and time on site. Look, those metrics are fine for media companies. For B2B, the metric that matters is: "Did this piece start a conversation that eventually became revenue?"
+The 11 features were built around one question: what has to be true for a mid-market ops team to make our platform their daily default? That's a strategy. A roadmap is just the list of things you're building — it tells you the what but not the why.
 
-Our blog generates 35% of our qualified pipeline. Not traffic — pipeline. ₹1.8 crore in pipeline from content alone in the last two quarters.
+Just being transparent: I wasted most of last year learning this. I was so focused on closing the feature gap with CompetitorX that I forgot to ask whether the gap was the reason we were losing deals. Turns out, it wasn't. We were losing deals because onboarding took too long and customers never reached the "aha" moment.
 
-Content isn't dead. But the bar for what works has gone up dramatically. You can't publish mediocre and hope volume saves you. You need fewer pieces that are genuinely useful, specific, and written like a human being with an actual point of view.
+My read: the most dangerous thing in B2B product is a full roadmap and no thesis. You feel productive. Your team feels productive. Your board sees velocity. But you're building a longer feature list, not a stickier product.
 
-What's a piece of B2B content that actually made you reach out to a company?
+Before you add the next feature to your roadmap — can you articulate the one-sentence thesis it serves? If you can't, that's worth pausing on.
 
-#ContentMarketing #B2BMarketing #ClimateTech #MarketingStrategy
+What's a feature your team shipped that looked great on the roadmap but didn't move any metric that mattered?
+
+#ProductStrategy #B2BSaaS #ProductManagement #StartupLessons

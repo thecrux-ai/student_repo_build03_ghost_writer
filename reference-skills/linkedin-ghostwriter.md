@@ -8,19 +8,23 @@ $ARGUMENTS
 
 ## Voice Profile
 
-**Tone**: Warm but direct. Uses contractions freely. No corporate jargon, no LinkedIn-bro energy ("I'm humbled and honored to announce..."). Mission-driven without being preachy. Confident opinions backed by specific evidence.
+**Tone**: Direct, data-driven, and honest. Uses contractions freely. No LinkedIn-bro energy ("I'm humbled and honored to announce..."). No corporate jargon. Confident opinions backed by specific numbers. Admits mistakes openly — the vulnerability is in the honesty, not the performance.
 
-**Opening pattern**: Always opens with a human moment — a scene, an observation, a small story — that pulls the reader in before revealing the point. Never opens with a statistic, a question, or "I'm excited to share." The opening should make someone stop scrolling.
+**Opening pattern (data-first or scene-setting)**: Opens with a specific number, a concrete scene, or a short declarative statement that earns the "see more" click. Never opens with "I'm excited to share" or a generic question. The opening should make someone stop scrolling because of a specific, unexpected detail.
 
-**Sentence rhythm (staccato-then-legato)**: Short punchy sentences (5-10 words) mixed with one longer flowing thought (25-40 words). The short sentences create momentum. The long sentence carries the insight. This pattern repeats throughout the post.
+**Sentence structure (structured directness)**: Short declarative sentences that build momentum. Gets to the point fast. When a longer sentence appears, it carries the analytical weight or the lesson — never filler. Paragraphs are 1-3 sentences max. The rhythm is staccato with occasional longer reflective beats.
 
-**Transition phrases**: Uses "Look," to signal directness and "Here's the thing:" to introduce the core insight or reframe. Appears once per post, typically at the turn where the post shifts from story to point.
+**Signature phrases**: Uses these naturally (1-2 per post):
+- "My read:" — before sharing his interpretation or the takeaway
+- "Just being transparent:" — before admitting a mistake or uncomfortable truth
+- "Here's what I need:" or "Here's what the data told us:" — before a key insight
+- "Need to move faster" — when calling the industry to action
 
-**Specificity with numbers**: Always concrete — "22% in the first 90 days", "47 days", "₹1.8 crore in pipeline." Numbers build credibility and make abstract claims tangible. If the user doesn't provide numbers, ask for them.
+**Parenthetical context**: Adds precision through parenthetical asides: "(same product, same flow, different delivery)", "(that's a strategy, not a roadmap)", "(out of 200+)". These add dimension without breaking the narrative flow.
 
-**Closing pattern**: Always ends with a question that invites genuine engagement — not "Agree? 🙌" but a specific question that makes someone want to share their own experience. The question should relate directly to the post's theme.
+**Closing pattern**: Always ends with a specific question that invites genuine engagement — not "Agree?" or "Thoughts?" but a question that asks people to share their own experience or challenge. The question relates directly to the post's core theme.
 
-**Punctuation style**: Em-dashes (—) for mid-sentence commentary. Parentheses for self-aware humor or asides. No excessive exclamation marks — one per post maximum, and only if genuinely warranted.
+**Honest self-awareness**: The most distinctive pattern. Freely admits what he got wrong, what took too long to learn, what he'd do differently. "I should have listened earlier." "That's on me." This isn't performative — it's how he builds credibility and invites honest conversation.
 
 ---
 
@@ -28,21 +32,21 @@ $ARGUMENTS
 
 Adjust the structure and tone based on the post type:
 
-- **Thought leadership**: Open with an observation or scene, build to an insight with evidence, close with a perspective-seeking question. Confident but not arrogant.
-- **Team wins**: Celebrate specific people and specific contributions. The win is the team's, the pride is personal. Avoid generic "great team" praise — name what each person did.
-- **Personal stories**: Most vulnerable, most conversational. A specific moment or lesson, honestly told. Never a humble-brag — genuine mistakes and genuine learning.
-- **Hiring posts**: Lead with what the role actually is (not the job title), show the team's personality, be specific about what success looks like at 3/6/12 months.
-- **Contrarian takes**: State the common view you're challenging, provide specific counter-evidence, acknowledge the grain of truth in the opposing view, then make your case.
+- **Thought leadership**: Lead with a specific number or observation, build to an insight backed by data, close with a question. Confident but not arrogant. Always grounded in something he's actually experienced, not theoretical.
+- **Team wins**: Celebrate specific people and specific contributions. The win is the team's, the near-miss is his to own. Honest about how close it was. Name what each person did.
+- **Personal stories**: Most vulnerable, most self-aware. A specific mistake, honestly told with real numbers and consequences. Never a humble-brag — genuine failures and genuine learning. Always connects to a broader principle.
+- **Hiring posts**: Lead with what the role actually involves (the unglamorous parts too). Show the team's personality through specific details. Be specific about what success looks like at 3/6/12 months. No generic "rockstar" language.
+- **Contrarian takes**: State the common practice he's challenging, provide specific counter-evidence from his own data, acknowledge what the conventional approach gets right, then make his case. Always ties to a concrete example.
 
 ---
 
 ## Structure Guidelines
 
-1. **Hook** (first 2-3 lines): A scene, moment, or statement that earns the click on "see more." This is the most important part.
-2. **Story/setup** (3-5 short paragraphs): Build the narrative with specific details — names, places, numbers, moments
-3. **The turn** ("Here's the thing:" or "Look,"): Where the post shifts from story to insight
-4. **The point** (2-3 paragraphs): The actual insight, opinion, or lesson — backed by evidence
-5. **Closing question**: Specific, genuine, invites real responses
+1. **Hook** (first 2-3 lines): A specific number, scene, or declarative statement that earns the "see more" click
+2. **Story/setup** (3-5 short paragraphs): Build the narrative with specific details — names, numbers, timelines, what actually happened
+3. **The turn** ("My read:" or "Just being transparent:" or "Here's what I learned:"): Where the post shifts from story to insight
+4. **The point** (2-3 paragraphs): The actual insight or lesson — backed by data, grounded in experience
+5. **Closing question**: Specific, genuine, invites real stories in response
 6. **Hashtags**: 3-5 relevant hashtags at the bottom, separated from the text
 
 ---
@@ -61,11 +65,12 @@ Adjust the structure and tone based on the post type:
 ## What to NEVER Do
 
 - Never open with "I'm thrilled to announce" or "Exciting news!"
-- Never use "Agree?" as a closing
+- Never use "Agree?" or "Thoughts?" as a closing
 - Never use more than one exclamation mark in the entire post
-- Never list "5 lessons I learned" with numbered takeaways (unless genuinely earned and specific)
+- Never list "5 lessons I learned" with numbered takeaways (unless backed by specific data for each)
 - Never humble-brag ("I was so surprised when [obvious achievement]")
 - Never use engagement-bait formatting (one. word. per. line.)
-- Never be vague when specifics are available
+- Never be vague when specifics are available — Arjun always has the numbers
 - Never mention "my network" — just talk to people
 - Never use the word "journey" unironically
+- Never blame others without first owning his own part of the problem

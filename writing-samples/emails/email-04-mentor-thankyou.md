@@ -1,29 +1,33 @@
-# Email 04 — Mentor Thank You
+# Email 04 — Thank You to Vikram
 
-**Context**: Nisha is writing to Sunita Deshmukh, her former manager at the logistics company who mentored her through a career pivot into climate-tech. Sunita recently gave a conference talk that Nisha watched online. Warm, personal, genuine.
-
----
-
-**From**: Nisha Kapoor
-**To**: Sunita Deshmukh
-**Subject**: Your ClimateForward talk — had to write you immediately
+**Context**: Arjun is writing to Vikram (the CEO, his boss) after a board meeting that went well. Vikram backed Arjun's pricing proposal in front of the board when Anjali from Sequoia pushed back hard. Arjun wants to express genuine gratitude — not performative, not sycophantic, just honest appreciation from someone who respects his boss.
 
 ---
 
-Sunita,
+**From**: Arjun Mehta
+**To**: Vikram
+**Subject**: Thursday's board meeting — thank you
 
-I watched your ClimateForward panel last night — the one on scaling impact teams in emerging markets — and I actually paused the stream at the 22-minute mark to text Aman: "This is the woman who convinced me to leave logistics."
+---
 
-You said something that hit me right in the chest. When you talked about hiring for "restless optimism" over domain expertise — that's exactly what you saw in me four years ago, isn't it? I didn't know a thing about climate-tech. I didn't know what a building management system was. But you sat across from me at that terrible coffee shop in Koramangala and said, "Nisha, the skills transfer. The passion doesn't."
+Vikram,
 
-I think about that conversation at least once a month. Usually when I'm interviewing someone who has the fire but not the resume (and I hire them anyway, thanks to you).
+I've been thinking about Thursday's board meeting since I walked out of the room, and I wanted to say something before it gets lost in the next fire drill.
 
-Here's the thing: GreenGrid just crossed 50 commercial buildings on our platform. We hit ₹2.4 crore ARR last month — up from ₹80 lakhs when I joined 18 months ago. None of that happens if you hadn't pushed me to take the leap. And I mean pushed — I remember the three follow-up emails when I went quiet for two weeks because I was scared.
+When Anjali pushed back on the pricing proposal — and she pushed hard, the "show me the win/loss data by price point" line was pointed — you didn't hedge. You backed the recommendation. You said "Arjun's team built this model, I trust the analysis, and here's why we're going with the mid-tier option." In front of the full board.
 
-I'd love to catch up properly. Not just a quick "let's grab coffee" that turns into calendar tennis for six weeks — I mean actually block an evening. Aman and I found this incredible rooftop place in Bandra that does Kerala food and has the most absurd view of the sea link.
+That mattered more than you probably realize.
 
-Are you in Mumbai anytime in the next month? And if not, when can I come to Bangalore and finally meet the team you've been building?
+Just being transparent: I was nervous going in. The pricing conversation has been the thing keeping me up at night for weeks. I knew the data was solid (INR 9.45 crore quarterly, 22% QoQ growth, the win/loss analysis across 140+ deals), but data doesn't always win in a boardroom. Sometimes politics does. The fact that you chose to stand behind the work instead of playing it safe — I won't forget that.
 
-With so much gratitude (and a little bit of that restless optimism),
+A few things I want to make sure land:
 
-Nisha
+- Ravi's feedback on the self-serve architecture was genuinely useful. He caught a scaling concern in the API layer that Rohit and I need to address before we ship Project Alpha. I'm setting up time with Rohit next week.
+- Nandini seemed satisfied with the TAM numbers. Meera's market sizing work held up well under questioning.
+- The Acme renewal update landed the way we wanted. Deepak's situation is still tight (March 31 deadline), but the board now understands why we're investing engineering cycles in mobile fixes instead of new features.
+
+Here's what I need from you going forward: when you and Anjali do your next 1:1, I'd like to know if she had follow-up concerns on pricing that she didn't raise in the room. I'd rather address them now than get surprised at the next meeting.
+
+And genuinely — thank you. Not just for Thursday. For the way you've let me own this process from the start, even when it would have been easier to hand it to finance.
+
+Arjun

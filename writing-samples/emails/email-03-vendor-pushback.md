@@ -1,29 +1,34 @@
-# Email 03 — Vendor Pushback
+# Email 03 — Engineering Pushback
 
-**Context**: Nisha is pushing back on a marketing agency (BrightSpark Digital) that delivered campaign creatives significantly below the agreed quality. She needs to be firm about the rework without burning the relationship — GreenGrid may need them for future campaigns.
-
----
-
-**From**: Nisha Kapoor
-**To**: Aditya Sharma, Account Director, BrightSpark Digital
-**Subject**: Re: GreenGrid Q3 campaign creatives — round 2 needed
+**Context**: Arjun is pushing back on Suresh (Head of Engineering) about sprint priorities. Suresh wants to prioritize a new analytics dashboard feature, but Arjun believes the mobile stability fix for Acme must come first. He needs to be diplomatic — Suresh is a peer, not a direct report — but firm about the business case.
 
 ---
 
-Aditya,
+**From**: Arjun Mehta
+**To**: Suresh Iyer
+**Subject**: Sprint priority — mobile fix needs to come before the analytics dashboard
 
-I appreciate your team turning this around quickly — I know the timeline was tight and I don't take that effort for granted.
+---
 
-But I have to be honest: what we received on Wednesday doesn't meet the brief we aligned on. I've gone through all 14 creatives, and the gap is significant enough that I can't send these to our CEO for approval, let alone run them.
+Suresh,
 
-Specifically — the messaging on 9 of the 14 pieces leads with cost savings. We were very clear in the brief (page 3, section 2) that GreenGrid's positioning leads with environmental impact and follows with economics. The tagline "Save Money, Save Energy" is exactly the framing we're trying to move away from. We discussed this in the kickoff on June 12th and I flagged it again in my email on June 20th.
+I appreciate you sending over the sprint plan yesterday. Your team's velocity has been strong this quarter and I don't take that for granted.
 
-Look, I'm not questioning your team's talent. The visual design is genuinely strong — the color palette and photography direction are spot on. This is a messaging alignment issue, not a capability issue.
+But I need to push back on the priority order, and I want to be specific about why.
 
-Here's what I need: a revised set of all 14 creatives with messaging that follows the approved positioning framework. I've re-attached the framework doc with the key phrases highlighted. My ask is to have the revised set by next Thursday, July 11th — that gives us just enough runway before the campaign launch on the 22nd.
+The analytics dashboard is a good feature. No argument there. But Acme Corp is a INR 45 lakh account with a contract expiring March 31, and Deepak told us plainly: show progress on mobile by mid-February or they start migration planning. That's not a negotiation tactic — I've been on three calls with him and he means it.
 
-I'd also like to schedule a 20-minute call early next week so we can walk through 2-3 of the creatives together before your team does the full rework. That way we're aligned before the effort goes in, not after.
+Here's the math that's driving my ask:
 
-Can your team commit to the July 11th deadline, and does Monday or Tuesday work for the alignment call?
+- Mobile fix: 2-week sprint, directly protects INR 45L in annual revenue (plus the 13 other enterprise customers Priya flagged with similar mobile complaints)
+- Analytics dashboard: 3-week sprint, projected to improve onboarding conversion by 8-12% — important, but nobody's churning because we don't have it yet
 
-Nisha
+My read: the analytics dashboard can ship in March without business impact. The mobile fix cannot wait until March without losing Acme. One has a hard deadline attached to revenue. The other doesn't.
+
+I know this isn't what your team wants to hear — they've been scoping the analytics work for weeks and they're excited about it. Fair ask: can we frame this as a sequence change, not a cancellation? Mobile fix ships first (February 15 target), analytics dashboard follows immediately after. Your team still ships both in Q1.
+
+I also want to be honest about my part in this. I should have raised the mobile priority 3 weeks ago when Deepak first flagged it. Instead I let it sit while we waited for the crash data, and now we're in a tighter window than we needed to be. That's on me.
+
+Can we sit down Monday morning and re-sequence together? I'd rather we align on this than have Vikram make the call for us — and he will if Acme escalates.
+
+Arjun

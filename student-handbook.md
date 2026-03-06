@@ -20,7 +20,7 @@ In the next 60 minutes, you'll teach Claude Code to write like a specific person
 
 | Part | Time | What You'll Do |
 |------|------|----------------|
-| Part 1 | 10 min | Claude reads Nisha's writing samples and discovers her voice patterns |
+| Part 1 | 10 min | Claude reads Arjun's writing samples and discovers his voice patterns |
 | Part 2 | 15 min | Build and test an email ghost writer skill |
 | Part 3 | 20 min | Build LinkedIn ghost writer + swap in YOUR voice |
 | Part 4 | 15 min | Compare, refine, and make skills permanent |
@@ -51,17 +51,19 @@ You should see the `writing-samples/` directory with emails and LinkedIn posts, 
 
 ---
 
-# Part 1: Nisha's Voice — See What Claude Discovers (10 min)
+# Part 1: Arjun's Voice — See What Claude Discovers (10 min)
 
-## Meet Nisha
+## You Know Arjun
 
-Before we start, read the case study to understand who Nisha is:
+You already met Arjun Mehta in Build 1 — VP of Product, Series B B2B SaaS company, drowning in messy files. You organized his chaotic workspace. Now you're going to teach Claude to write like him.
+
+Read the case study for a quick refresher on his voice patterns:
 
 ```
-Read casestudy.md and give me a brief summary of who Nisha is
+Read casestudy.md and give me a brief summary of Arjun's voice patterns
 ```
 
-Nisha Kapoor is Head of Growth at GreenGrid, a climate-tech startup in Mumbai. She writes dozens of emails a day and posts on LinkedIn multiple times a week. Her writing is warm but direct, specific, and mission-driven. She has a distinctive voice — and Claude is about to figure out exactly what makes it distinctive.
+Arjun is direct, data-driven, and action-oriented. He leads with numbers, admits his mistakes, and always ends with next steps. He has a distinctive voice — and Claude is about to figure out exactly what makes it distinctive.
 
 ## Step 1: Claude Reads All Writing Samples
 
@@ -71,34 +73,35 @@ Ask Claude to read everything:
 Read all 10 files in the writing-samples/ directory — both the emails/ and linkedin-posts/ folders. Don't summarize them yet, just read them all.
 ```
 
-This loads all of Nisha's writing into Claude's context. Claude now has 10 different examples of her voice across different formats and situations.
+This loads all of Arjun's writing into Claude's context. Claude now has 10 different examples of his voice across different formats and situations.
 
 ## Step 2: Discover the Voice Patterns
 
 Now ask Claude to analyze:
 
 ```
-Based on all 10 writing samples you just read, identify the distinctive patterns in Nisha's writing voice. Look at:
+Based on all 10 writing samples you just read, identify the distinctive patterns in Arjun's writing voice. Look at:
 
-- How she opens emails vs LinkedIn posts
-- Her sentence structure and rhythm
-- Specific phrases or transitions she repeats
-- How she uses numbers and specifics
-- How she closes (emails vs posts)
-- Her punctuation habits
-- Her tone and how it shifts across different contexts
+- How he opens emails vs LinkedIn posts
+- His sentence structure and rhythm
+- Specific phrases or transitions he repeats
+- How he uses numbers and data
+- How he closes (emails vs posts)
+- His punctuation habits (especially parenthetical asides)
+- His tone and how it shifts across different contexts
+- How he handles admitting mistakes or taking accountability
 
 Be specific — quote examples from the samples to support each pattern you identify.
 ```
 
-**What to watch for**: Claude should identify most (if not all) of Nisha's 7 voice patterns listed in `casestudy.md`. It might also find patterns you didn't expect — that's a feature, not a bug.
+**What to watch for**: Claude should identify most (if not all) of Arjun's 7 voice patterns listed in `casestudy.md`. It might also find patterns you didn't expect — that's a feature, not a bug.
 
 ## Step 3: Create the Voice Fingerprint
 
 Ask Claude to structure its findings:
 
 ```
-Now organize those patterns into a structured "voice fingerprint" — a clear reference document that could be used to write new content in Nisha's voice. Format it as a markdown document with specific sections for tone, opening patterns, sentence rhythm, transitions, specificity habits, closing patterns, and punctuation style.
+Now organize those patterns into a structured "voice fingerprint" — a clear reference document that could be used to write new content in Arjun's voice. Format it as a markdown document with specific sections for tone, opening patterns, sentence structure, signature phrases, parenthetical style, closing patterns, and self-awareness patterns.
 ```
 
 **Keep this fingerprint in your conversation** — you'll use it in the next step to build the skill file.
@@ -127,7 +130,7 @@ Claude Code slash commands (also called "skills") are markdown files that live i
 2. **Format**: Regular markdown files with instructions for Claude
 3. **Arguments**: Use `$ARGUMENTS` in the file as a placeholder — whatever the user types after the slash command gets inserted there
 
-Example: If `email-ghostwriter.md` contains "Write an email about: $ARGUMENTS" and you type `/email-ghostwriter follow up with the client about the pilot`, Claude sees "Write an email about: follow up with the client about the pilot".
+Example: If `email-ghostwriter.md` contains "Write an email about: $ARGUMENTS" and you type `/email-ghostwriter follow up with Deepak about the renewal`, Claude sees "Write an email about: follow up with Deepak about the renewal".
 
 That's it. No code. No configuration. Just a markdown file in the right folder.
 
@@ -142,50 +145,50 @@ Create the .claude/commands/ directory in this project
 Now ask Claude to build the skill using the voice fingerprint from Part 1:
 
 ```
-Using the voice fingerprint we created for Nisha, build a slash command skill file for writing emails in her voice.
+Using the voice fingerprint we created for Arjun, build a slash command skill file for writing emails in his voice.
 
 The file should be saved as .claude/commands/email-ghostwriter.md and include:
-- The voice profile (tone, openings, rhythm, transitions, specificity, closings, punctuation)
+- The voice profile (tone, openings, sentence structure, signature phrases, parenthetical style, closings, self-awareness)
 - A $ARGUMENTS placeholder for the email request
-- Guidance on adapting the voice for different email types (formal, casual, difficult)
+- Guidance on adapting the voice for different email types (client, team, pushback, personal, difficult)
 - A "what to never do" section
 
-Make it detailed enough that someone who has never read Nisha's writing could use this skill and produce an email that sounds like her.
+Make it detailed enough that someone who has never read Arjun's writing could use this skill and produce an email that sounds like him.
 ```
 
-## Step 3: Test — Client Follow-Up Email
+## Step 3: Test — Acme Follow-Up Email
 
 Time to see if it works. Use the slash command:
 
 ```
-/email-ghostwriter Write a follow-up email to Rajesh Menon at Apex Logistics. The pilot has been running for 30 days and the results are strong — 21% energy reduction, ahead of the 18% benchmark. Nisha wants to schedule a call to discuss expanding to their 5 regional warehouses.
+/email-ghostwriter Write a follow-up email to Deepak Sharma at Acme Corp. The mobile fix shipped on time (crash rate down 94%), and Arjun wants to schedule a call to discuss the renewal pricing options before the March 31 deadline. Include the loyalty pricing adjustment and the Project Alpha early access offer.
 ```
 
-**Evaluate the output**: Does it sound like Nisha? Check for:
-- [ ] Human-first opening (not "I'm writing to update you on...")
-- [ ] Short punchy sentences mixed with longer ones
-- [ ] Specific numbers used naturally
-- [ ] "Look," or "Here's the thing:" used appropriately
-- [ ] Ends with a forward-looking question
-- [ ] Em-dashes or parentheses used naturally
-- [ ] Warm but direct tone — no jargon
+**Evaluate the output**: Does it sound like Arjun? Check for:
+- [ ] Opens with data or specific evidence (not "I'm writing to update you on...")
+- [ ] Short declarative sentences, structured and direct
+- [ ] "My read:" or "Just being transparent" used naturally
+- [ ] Specific numbers used throughout
+- [ ] Parenthetical asides for context and deadlines
+- [ ] Ends with clear next steps and a specific question
+- [ ] Honest and direct tone — no jargon
 
-## Step 4: Test — Difficult Team Conversation
+## Step 4: Test — Difficult Conversation with Suresh
 
 Different email type, same voice:
 
 ```
-/email-ghostwriter Write an email to Vikram on the growth team. He's been missing deadlines consistently for the past 3 weeks — the SEO audit was 4 days late, the competitor analysis is now a week overdue. Nisha values Vikram and thinks he might be overwhelmed, but she needs to address this directly. She wants to understand what's going on and find a solution, not just reprimand him.
+/email-ghostwriter Write an email to Suresh about a new issue: the self-serve onboarding API changes are behind schedule. Rohit's platform team has a bandwidth conflict between Project Alpha and the payment gateway. Arjun needs Suresh to reallocate two engineers for 3 weeks. He knows this is a big ask and wants to make the case with data, not authority.
 ```
 
-**Compare**: Does the voice hold across a completely different email type? The warmth-to-directness ratio should shift (more direct here), but the core patterns should remain.
+**Compare**: Does the voice hold across a completely different email type? The empathy-to-directness ratio should shift (more empathy here since it's a big ask), but the core patterns should remain.
 
 ## Step 5: Iterate
 
 Claude will probably get 80% right on the first try. Let's improve it:
 
 ```
-Read the two emails you just generated. Compare them against the original writing samples in writing-samples/emails/. Identify any gaps — places where the generated emails don't quite match Nisha's voice patterns. Then update the skill file at .claude/commands/email-ghostwriter.md to address those gaps.
+Read the two emails you just generated. Compare them against the original writing samples in writing-samples/emails/. Identify any gaps — places where the generated emails don't quite match Arjun's voice patterns. Then update the skill file at .claude/commands/email-ghostwriter.md to address those gaps.
 ```
 
 This is the key insight: **Claude can critique its own output against the original samples and improve the skill file.**
@@ -199,9 +202,9 @@ This is the key insight: **Claude can critique its own output against the origin
 You know the pattern now. Ask Claude to build the second skill:
 
 ```
-Using the same voice fingerprint, build a slash command skill file for writing LinkedIn posts in Nisha's voice. Save it as .claude/commands/linkedin-ghostwriter.md.
+Using the same voice fingerprint, build a slash command skill file for writing LinkedIn posts in Arjun's voice. Save it as .claude/commands/linkedin-ghostwriter.md.
 
-LinkedIn posts are different from emails — they need a scroll-stopping hook, shorter paragraphs, and a closing question that drives engagement. Adapt Nisha's voice patterns to the LinkedIn format while keeping her core identity.
+LinkedIn posts are different from emails — they need a scroll-stopping hook, shorter paragraphs, and a closing question that drives engagement. Adapt Arjun's voice patterns to the LinkedIn format while keeping his core identity — especially the data-first framing, the honest self-awareness, and the signature phrases.
 
 Include $ARGUMENTS, post type guidance, formatting rules for LinkedIn, and a "what to never do" section.
 ```
@@ -209,10 +212,10 @@ Include $ARGUMENTS, post type guidance, formatting rules for LinkedIn, and a "wh
 ## Step 2: Test the LinkedIn Skill
 
 ```
-/linkedin-ghostwriter Write a post about how GreenGrid just completed their first pilot in Southeast Asia — a 40-story office tower in Singapore that saw 19% energy reduction in 6 weeks. This is a milestone because it proves the technology works outside India. Keep it genuine, not braggy.
+/linkedin-ghostwriter Write a post about how Project Alpha (self-serve onboarding) just hit 82% completion rate after the team pivoted to video walkthroughs based on Meera's user research. This is a win for listening to data over assumptions. Keep it honest — mention the 34% completion rate they started with and what Arjun got wrong initially.
 ```
 
-**Check**: Does it have a scroll-stopping opening? Does it end with a real question? Does it sound like Nisha's LinkedIn posts, not a generic corporate announcement?
+**Check**: Does it have a scroll-stopping opening? Does it end with a real question? Does it sound like Arjun's LinkedIn posts, not a generic corporate announcement?
 
 ---
 
@@ -225,7 +228,7 @@ This is the part where it gets personal.
 If you have 5+ emails you've written (check your Sent folder), paste them into the conversation:
 
 ```
-I'm going to paste 5 of my own emails below. I want you to analyze my writing voice the same way you analyzed Nisha's — identify my distinctive patterns, create a voice fingerprint, and then rebuild the email-ghostwriter.md skill file to match MY voice instead of Nisha's.
+I'm going to paste 5 of my own emails below. I want you to analyze my writing voice the same way you analyzed Arjun's — identify my distinctive patterns, create a voice fingerprint, and then rebuild the email-ghostwriter.md skill file to match MY voice instead of Arjun's.
 
 Here are my emails:
 
@@ -277,7 +280,7 @@ Option A will produce a more accurate skill file, but Option B is a perfectly go
 After Claude analyzes your voice (or your description), tell it:
 
 ```
-Now rebuild .claude/commands/email-ghostwriter.md to match MY voice instead of Nisha's. Keep the same structure but replace all the voice patterns with mine.
+Now rebuild .claude/commands/email-ghostwriter.md to match MY voice instead of Arjun's. Keep the same structure but replace all the voice patterns with mine.
 ```
 
 ### Step 4: Test on a Real Email
@@ -327,7 +330,7 @@ This is the most convincing demonstration of what skills can do:
 ```
 Write the same email two ways:
 
-First, write a follow-up email to a client named Sarah Chen who attended our product demo last week. She seemed interested but had concerns about implementation timeline. We can do a phased rollout starting with one building.
+First, write a follow-up email to a client named Deepak Sharma who is considering switching to a competitor. We've fixed the mobile issues he raised, and we want to schedule a renewal discussion before March 31.
 
 Write it ONCE using my /email-ghostwriter skill.
 
@@ -383,7 +386,7 @@ Some ideas to get you thinking:
 
 | Do This | Not This |
 |---------|----------|
-| Specific patterns with examples: "Uses em-dashes for asides" | Vague instructions: "Write naturally" |
+| Specific patterns with examples: "Uses parenthetical asides for deadlines" | Vague instructions: "Write naturally" |
 | Concrete numbers: "Paragraphs of 1-3 sentences" | Ambiguous ranges: "Keep it concise" |
 | "Never" list with specific anti-patterns | No guardrails — Claude will default to generic |
 | Format-specific guidance (email vs post) | One-size-fits-all instructions |

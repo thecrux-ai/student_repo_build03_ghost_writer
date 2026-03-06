@@ -1,25 +1,23 @@
-# LinkedIn Post 02 — Team Win
+# LinkedIn Post 02 — Saving a Key Account
 
-**Context**: Nisha celebrates GreenGrid closing their first enterprise client — a major hotel chain. She wants to highlight the team's effort, share the scale of the win, and humanize the startup journey.
+**Context**: Arjun shares the story of how his team saved the Acme Corp renewal. He wants to highlight the team effort, be honest about the near-miss, and humanize what "customer retention" actually looks like at a growing startup.
 
 ---
 
-Six months ago, my team sat in a conference room eating cold biryani at 10 PM, staring at a whiteboard full of reasons why enterprise clients would never take a meeting with a 30-person startup.
+Three weeks ago, our largest client told us they were starting migration planning to a competitor. INR 45 lakhs in annual revenue, a 14-month relationship, and an ops team that saves 8 hours a week on our platform — all of it about to walk out the door.
 
-Yesterday, we signed Meridian Hotels. 14 properties. Largest single deal in GreenGrid's history.
+Yesterday, Deepak signed the renewal. Two-year contract. Here's what actually happened.
 
-I want to tell you about the moment I knew we'd win this.
+The mobile app was crashing 2-3 times a day for their field agents. CompetitorX quoted them 30% less. And Deepak — who is one of the most straightforward clients I've ever worked with — told us plainly: "Show progress by mid-February or we start migrating."
 
-It wasn't the final pitch. It wasn't the pilot results (though 26% energy reduction across their Pune property in 8 weeks certainly helped). It was a Tuesday afternoon in month three of the sales cycle when Ravi — our most junior growth associate, 11 months out of college — sent me a Slack message at midnight with a 4-page analysis of Meridian's sustainability report that identified a gap nobody on their team had noticed.
+Just being transparent: I should have caught the mobile issue 3 weeks earlier. The crash data was sitting in our monitoring dashboard. I saw it and prioritized other things. That's on me.
 
-He didn't have to do that. Nobody asked him to read a 200-page sustainability report on his own time. He did it because he cared about the outcome more than the job description.
+What turned it around wasn't a grand strategy. It was Suresh's engineering team dropping everything to ship a stability patch in 9 days. It was Priya pulling together a competitive analysis that showed the real cost comparison (apples to apples, the gap was 8%, not 30%). It was Meera flying to Mumbai to sit with Deepak's ops team for a day and document every friction point they'd been quietly working around.
 
-Here's the thing: enterprise deals don't close because of one brilliant slide deck. They close because 8 people across 6 months each do one thing that didn't need to be done but made all the difference.
+Nobody asked Meera to do that trip. She booked it herself, told me after.
 
-Priya's custom energy model. Vikram's competitor teardown. Ananya's relationship with the Meridian facilities manager that turned a skeptic into a champion. Every one of those was an unassigned task someone chose to own.
+My read: retention isn't a metric you optimize. It's a relationship you earn back every quarter. And the moments that save accounts are almost never in the playbook — they're the things one person on your team decides to do because they care about the outcome more than the process.
 
-I manage a team of 8. Today I'm just incredibly proud of all of them.
+When's the last time your team saved an account that was already halfway out the door? What was the moment that turned it?
 
-What's a "nobody asked me to do this" moment that changed the outcome for your team?
-
-#StartupLife #ClimateAction #TeamWins #GreenGrid
+#CustomerSuccess #B2BSaaS #StartupLife #TeamWins

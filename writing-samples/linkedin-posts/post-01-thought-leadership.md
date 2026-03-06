@@ -1,25 +1,23 @@
-# LinkedIn Post 01 — Thought Leadership
+# LinkedIn Post 01 — Product-Led Growth Insight
 
-**Context**: Nisha shares an industry insight about commercial energy waste in India. Positioning herself and GreenGrid as knowledgeable voices in climate-tech without being salesy.
+**Context**: Arjun shares a hard-won lesson about self-serve onboarding from Project Alpha. Positioning himself as a thoughtful product leader in the B2B SaaS space — not selling, just sharing what he's learning.
 
 ---
 
-I walked through a brand-new office tower in BKC last month. Beautiful building. LEED Platinum certified. The lobby had this enormous living wall — very Instagrammable, very "we care about the planet."
+Last quarter, I was convinced self-serve onboarding was a straightforward engineering problem. Build the flow, remove the CSM dependency, watch SMB customers activate in 48 hours instead of 14 days.
 
-The HVAC system was running at full capacity on a Sunday. The building was empty.
+We spent 6 weeks on the build. Our completion rate was 34%.
 
-Here's the thing: India's commercial buildings waste an estimated 30-40% of their energy. Not because building managers don't care — most of them care deeply — but because the systems they're working with were designed for a world where energy was cheap and data was expensive.
+Here's what the data told us (and what I should have listened to earlier): 60% of our SMB customers wanted video walkthroughs, not documentation. They weren't dropping off because the flow was broken. They were dropping off because they couldn't picture what "done" looked like.
 
-That world doesn't exist anymore.
+My read: product-led growth in B2B is harder than the playbooks make it sound. Most PLG advice comes from horizontal tools — your Slacks, your Notions, your Figmas. Products where the user already understands the category. When you're selling an ops platform to a mid-market facilities manager who's never used a dashboard before, "intuitive UI" isn't enough. You need to show them their own workflow inside your product before they trust it.
 
-The fix isn't sexy. It's not solar panels on the roof or a living wall in the lobby. It's software that learns a building's actual usage patterns — when people arrive, when they leave, which floors run hot, which conference rooms sit empty 68% of the time — and adjusts in real time.
+We rebuilt the onboarding around 3-minute video walkthroughs mapped to specific use cases. Completion rate went from 34% to 82%. Same product. Same flow. Different delivery.
 
-We've seen this work at 50+ commercial buildings now. Average energy reduction: 22% in the first 90 days. No hardware changes. No construction. No disruption to the people inside.
+The lesson I keep coming back to: self-serve doesn't mean self-explanatory. It means the customer can get to value without calling you — but you still have to do the work of teaching, just asynchronously.
 
-Look, I get why the flashy stuff gets the press coverage. A living wall photographs better than a dashboard. But the dashboard is what actually moves the needle.
+Need to move faster on this across the industry. Too many B2B teams are copying consumer PLG patterns and wondering why enterprise customers bounce.
 
-The most impactful climate solutions are often the most invisible ones. And I think we need to get more comfortable celebrating boring efficiency over beautiful gestures.
+What's the hardest part of self-serve onboarding you've tackled in B2B? Genuinely curious — we're still figuring this out.
 
-What's the most underrated sustainability initiative you've seen in commercial real estate?
-
-#ClimateAction #EnergyEfficiency #BuildingTech #Sustainability
+#ProductManagement #PLG #B2BSaaS #SelfServe

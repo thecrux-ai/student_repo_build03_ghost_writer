@@ -1,28 +1,30 @@
-# LinkedIn Post 04 — Hiring Announcement
+# LinkedIn Post 04 — Hiring a Senior PM
 
-**Context**: Nisha is hiring a Content Marketing Lead for GreenGrid. She wants to attract the right person — someone who can make complex climate-tech topics accessible — while showing GreenGrid's culture and personality.
+**Context**: Arjun is hiring a Senior PM for his team. He wants to attract the right person — someone who can handle enterprise B2B product work — while showing the team's culture honestly. Not a generic job post.
 
 ---
 
-We're hiring a Content Marketing Lead at GreenGrid, and I want to be upfront about what this role actually is (and isn't).
+We're hiring a Senior PM, and I want to be upfront about what this role actually involves (because most PM job posts are useless).
 
-It's NOT a "write 3 blog posts a week and optimize for SEO" role. If that's what you're looking for, I'll save you 20 minutes — this isn't it.
+Here's the real version.
 
-Here's what it actually is.
+You'd join a 12-person product team at a Series B B2B SaaS company in Bangalore. We build an operations platform for mid-market businesses — dashboards, reporting, workflow automation. About 100 employees, growing 22% quarter-over-quarter, and trying to prove unit economics to a board that includes Sequoia India and Accel.
 
-You'd be the person who takes deeply technical climate-tech concepts — building energy modeling, HVAC optimization algorithms, grid demand response — and turns them into stories that a facilities manager in Pune and a CFO in Singapore both want to read. That's a genuinely rare skill.
+The glamorous part: you'd own a product used by 200+ companies to run their daily operations. You'd work directly with enterprise clients (real conversations with real VPs, not personas in a slide deck). You'd ship features that save ops teams 8+ hours a week.
 
-The team you'd join: 8 people, mostly in Mumbai, operating at the speed of a Series A startup that just signed its first enterprise client. We ship fast, we argue about headlines over chai (it gets heated — Vikram has Strong Opinions about semicolons), and we measure everything.
+The unglamorous part: our mobile app needs work. Our biggest client nearly churned last quarter. The self-serve onboarding we've been building (Project Alpha) is the most complex UX challenge I've tackled in 15 years. You'd inherit some of that complexity on day one.
 
-Some specifics about what success looks like:
-- 3 months in: you've published our first long-form industry report and it's generating inbound leads
-- 6 months in: you've built a content engine — blog, email, social — that drives 40% of our pipeline
-- 12 months in: GreenGrid is the brand people think of when they think "smart buildings in India"
+What success looks like:
+- 3 months: you've shipped one meaningful improvement based on customer data, not a feature request list
+- 6 months: you own a product area end-to-end and your engineering counterpart trusts your prioritization
+- 12 months: a customer mentions your feature in a renewal conversation
 
-What I need from you: 3+ years in B2B content marketing, the ability to interview an engineer for 20 minutes and turn it into a compelling 1,500-word piece, and enough intellectual curiosity to actually find energy efficiency interesting (it is — I promise).
+The team you'd join argues about sprint priorities over chai (Suresh has Strong Opinions about technical debt). Priya will challenge every assumption in your PRD. Meera will show you user research that contradicts your hypothesis. It's intense, it's honest, and nobody ships anything they're not proud of.
 
-What you get from us: equity in a company that's growing 3x year-over-year, a team that takes the work seriously but not themselves, and the chance to build a brand in a market that barely exists yet — which means everything you create is first, not fifteenth.
+Here's what I need: 4+ years in B2B product, strong analytical instincts (if you can't read a funnel, this isn't the role), and the ability to tell an engineering lead "no" with data instead of authority. Enterprise experience is a strong plus.
 
-Know someone who'd be perfect? Tag them. Or if this sounds like you — what's a piece of content you've created that you're genuinely proud of?
+What you get: equity in a company that's growing, a team that takes the work seriously, and the kind of product problems that actually teach you something (not another dashboard redesign).
 
-#Hiring #ContentMarketing #ClimateTech #StartupJobs #Mumbai
+Know someone who'd thrive here? Tag them. If this sounds like you — what's a product decision you made that you'd make differently today?
+
+#Hiring #ProductManagement #B2BSaaS #StartupJobs #Bangalore

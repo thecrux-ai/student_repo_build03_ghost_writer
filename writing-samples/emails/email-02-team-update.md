@@ -1,29 +1,36 @@
-# Email 02 — Team Update
+# Email 02 — Friday Team Update
 
-**Context**: Nisha sends a Friday update to her growth team of 8. This week saw a mix of wins and a notable miss on a campaign deadline. Tone is casual, honest, and motivating.
+**Context**: Arjun sends a Friday update to his 12-person product team. This week had a major Project Alpha milestone hit, but also a legal bottleneck that's slowing things down. Tone is direct, honest, and forward-looking.
 
 ---
 
-**From**: Nisha Kapoor
-**To**: Growth Team
-**Subject**: Friday wrap — the good, the real, and the next
+**From**: Arjun Mehta
+**To**: Product Team
+**Subject**: Friday update — wins, misses, and what I need from you next week
 
 ---
 
 Team,
 
-Priya closed the Oberoi Realty demo. I'm going to let that sit for a second because six weeks ago we couldn't get past their EA's inbox, and now we're presenting to their Head of Facilities on Thursday. That's what persistent, creative outreach looks like — Priya sent a 45-second Loom showing their Worli tower's energy data from public records. Brilliant move.
+The wins first.
 
-Other wins: website traffic is up 31% week-over-week after Vikram's SEO sprint, and the "Energy Villain" campaign hit 12,000 impressions in 3 days (for context, our best campaign last quarter peaked at 8,000). Not bad for a team that was debating the headline over chai on Monday.
+Project Alpha hit its design milestone on time. Meera's Figma mockups are done (all 34 screens), and the user testing results came back strong — 82% task completion rate on the self-serve flow, up from 60% on the first iteration. That's the kind of number that moves a board conversation. Meera, genuinely great work on incorporating the video walkthrough feedback from your research. It shows.
 
-Now the real part. We missed the Sustainability Week campaign deadline. It was supposed to go live Wednesday and it's still in review. I'm not going to sugarcoat it — that's a missed window we won't get back this quarter. I own part of this because I didn't flag the bottleneck in design approvals early enough. Let's fix the process, not assign blame.
+Priya closed the notification v2 PRD review with platform. Rohit's team signed off on the API changes, and we're on track for staging next week. The rate limit fix (bumping from 100/min to 500/min for enterprise customers) is confirmed for the same sprint.
 
-Here's the thing: one missed deadline doesn't define a week where we also landed our biggest demo yet and ran a campaign that's already outperforming last month's best.
+Now the miss.
 
-For next week — Ravi, can you pull together the Q3 content calendar draft by Tuesday? And everyone, please block 30 minutes on Monday for our retro on the Sustainability Week miss. Let's make it quick and useful.
+The Razorpay payment gateway contract is still stuck with legal. It's been 3 weeks. I should have escalated to Anika sooner — that's on me. I'm meeting with her Monday morning to unblock it. Priya, I know this has been frustrating for you especially. My commitment: resolved by Wednesday or I'm going to Vikram.
 
-What's one thing you'd change about our workflow to make sure we don't miss another window like this?
+Here's what I need from everyone next week:
 
-Have a good weekend, everyone. You earned it.
+- **Suresh**: Engineering estimate for the mobile stability fix — final scope, not a range (due Tuesday)
+- **Priya**: Notification v2 customer communication draft. 14 enterprise customers need 30-day deprecation notice on the old webhook format (Acme is on that list — handle them carefully)
+- **Meera**: Project Alpha video walkthrough budget proposal. The board will ask about this on March 20 and I need real numbers, not estimates (due Friday)
+- **Rohit**: Confirm platform team bandwidth for Project Alpha API changes — I need to know if this conflicts with the payment gateway work
 
-Nisha
+One more thing. I know some of you have been working weekends. I see it and I appreciate it, but it's not sustainable. If you're overloaded, tell me — that's my problem to solve, not yours to absorb. Fair ask: flag it before it becomes burnout.
+
+Have a good weekend.
+
+Arjun
