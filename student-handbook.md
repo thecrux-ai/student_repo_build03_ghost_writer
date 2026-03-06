@@ -1,0 +1,476 @@
+# Build 03: Ghost Writer — Student Handbook
+
+## What You'll Build
+
+In the next 60 minutes, you'll teach Claude Code to write like a specific person — first using a sample persona, then using YOUR own writing voice. You'll build two slash commands (skills) that generate emails and LinkedIn posts that sound authentically human.
+
+**By the end of this session, you'll have:**
+- Two working slash commands in `.claude/commands/`
+- A repeatable process for capturing ANY writing voice
+- Skills that write first drafts sounding like you (not like AI)
+
+**Prerequisites:**
+- Claude Code installed and working
+- This repository cloned to your machine
+- Familiarity with basic Claude Code usage (prompting, reading files)
+
+---
+
+## How This Session Works
+
+| Part | Time | What You'll Do |
+|------|------|----------------|
+| Part 1 | 10 min | Claude reads Nisha's writing samples and discovers her voice patterns |
+| Part 2 | 15 min | Build and test an email ghost writer skill |
+| Part 3 | 20 min | Build LinkedIn ghost writer + swap in YOUR voice |
+| Part 4 | 15 min | Compare, refine, and make skills permanent |
+
+---
+
+## Before You Start
+
+Make sure you're in the repository directory:
+
+```bash
+cd student_repo_build03_ghost_writer
+```
+
+Open Claude Code:
+
+```bash
+claude
+```
+
+Take a quick look at what's in the repo:
+
+```
+Tell me what files are in this repository and give me a brief overview of its structure
+```
+
+You should see the `writing-samples/` directory with emails and LinkedIn posts, plus `casestudy.md` and this handbook. You should NOT see a `.claude/commands/` directory — you'll create that yourself.
+
+---
+
+# Part 1: Nisha's Voice — See What Claude Discovers (10 min)
+
+## Meet Nisha
+
+Before we start, read the case study to understand who Nisha is:
+
+```
+Read casestudy.md and give me a brief summary of who Nisha is
+```
+
+Nisha Kapoor is Head of Growth at GreenGrid, a climate-tech startup in Mumbai. She writes dozens of emails a day and posts on LinkedIn multiple times a week. Her writing is warm but direct, specific, and mission-driven. She has a distinctive voice — and Claude is about to figure out exactly what makes it distinctive.
+
+## Step 1: Claude Reads All Writing Samples
+
+Ask Claude to read everything:
+
+```
+Read all 10 files in the writing-samples/ directory — both the emails/ and linkedin-posts/ folders. Don't summarize them yet, just read them all.
+```
+
+This loads all of Nisha's writing into Claude's context. Claude now has 10 different examples of her voice across different formats and situations.
+
+## Step 2: Discover the Voice Patterns
+
+Now ask Claude to analyze:
+
+```
+Based on all 10 writing samples you just read, identify the distinctive patterns in Nisha's writing voice. Look at:
+
+- How she opens emails vs LinkedIn posts
+- Her sentence structure and rhythm
+- Specific phrases or transitions she repeats
+- How she uses numbers and specifics
+- How she closes (emails vs posts)
+- Her punctuation habits
+- Her tone and how it shifts across different contexts
+
+Be specific — quote examples from the samples to support each pattern you identify.
+```
+
+**What to watch for**: Claude should identify most (if not all) of Nisha's 7 voice patterns listed in `casestudy.md`. It might also find patterns you didn't expect — that's a feature, not a bug.
+
+## Step 3: Create the Voice Fingerprint
+
+Ask Claude to structure its findings:
+
+```
+Now organize those patterns into a structured "voice fingerprint" — a clear reference document that could be used to write new content in Nisha's voice. Format it as a markdown document with specific sections for tone, opening patterns, sentence rhythm, transitions, specificity habits, closing patterns, and punctuation style.
+```
+
+**Keep this fingerprint in your conversation** — you'll use it in the next step to build the skill file.
+
+### Pause and Reflect
+
+Look at the voice fingerprint Claude created. Compare it to the 7 patterns listed in `casestudy.md`.
+
+- Did Claude catch all 7?
+- Did it find anything extra that's genuinely insightful?
+- Is there a pattern you see in the samples that Claude missed?
+
+If Claude missed something, tell it! This is the iteration process.
+
+---
+
+# Part 2: Build the Email Ghost Writer Skill (15 min)
+
+## How Slash Commands Work (60-second explainer)
+
+Claude Code slash commands (also called "skills") are markdown files that live in a `.claude/commands/` directory. When you type `/command-name` in Claude Code, it reads that file and uses it as instructions.
+
+**Three things to know:**
+
+1. **Location**: `.claude/commands/` in your project directory (project-level) or `~/.claude/commands/` in your home directory (global — works everywhere)
+2. **Format**: Regular markdown files with instructions for Claude
+3. **Arguments**: Use `$ARGUMENTS` in the file as a placeholder — whatever the user types after the slash command gets inserted there
+
+Example: If `email-ghostwriter.md` contains "Write an email about: $ARGUMENTS" and you type `/email-ghostwriter follow up with the client about the pilot`, Claude sees "Write an email about: follow up with the client about the pilot".
+
+That's it. No code. No configuration. Just a markdown file in the right folder.
+
+## Step 1: Create the Commands Directory
+
+```
+Create the .claude/commands/ directory in this project
+```
+
+## Step 2: Build the Email Skill
+
+Now ask Claude to build the skill using the voice fingerprint from Part 1:
+
+```
+Using the voice fingerprint we created for Nisha, build a slash command skill file for writing emails in her voice.
+
+The file should be saved as .claude/commands/email-ghostwriter.md and include:
+- The voice profile (tone, openings, rhythm, transitions, specificity, closings, punctuation)
+- A $ARGUMENTS placeholder for the email request
+- Guidance on adapting the voice for different email types (formal, casual, difficult)
+- A "what to never do" section
+
+Make it detailed enough that someone who has never read Nisha's writing could use this skill and produce an email that sounds like her.
+```
+
+## Step 3: Test — Client Follow-Up Email
+
+Time to see if it works. Use the slash command:
+
+```
+/email-ghostwriter Write a follow-up email to Rajesh Menon at Apex Logistics. The pilot has been running for 30 days and the results are strong — 21% energy reduction, ahead of the 18% benchmark. Nisha wants to schedule a call to discuss expanding to their 5 regional warehouses.
+```
+
+**Evaluate the output**: Does it sound like Nisha? Check for:
+- [ ] Human-first opening (not "I'm writing to update you on...")
+- [ ] Short punchy sentences mixed with longer ones
+- [ ] Specific numbers used naturally
+- [ ] "Look," or "Here's the thing:" used appropriately
+- [ ] Ends with a forward-looking question
+- [ ] Em-dashes or parentheses used naturally
+- [ ] Warm but direct tone — no jargon
+
+## Step 4: Test — Difficult Team Conversation
+
+Different email type, same voice:
+
+```
+/email-ghostwriter Write an email to Vikram on the growth team. He's been missing deadlines consistently for the past 3 weeks — the SEO audit was 4 days late, the competitor analysis is now a week overdue. Nisha values Vikram and thinks he might be overwhelmed, but she needs to address this directly. She wants to understand what's going on and find a solution, not just reprimand him.
+```
+
+**Compare**: Does the voice hold across a completely different email type? The warmth-to-directness ratio should shift (more direct here), but the core patterns should remain.
+
+## Step 5: Iterate
+
+Claude will probably get 80% right on the first try. Let's improve it:
+
+```
+Read the two emails you just generated. Compare them against the original writing samples in writing-samples/emails/. Identify any gaps — places where the generated emails don't quite match Nisha's voice patterns. Then update the skill file at .claude/commands/email-ghostwriter.md to address those gaps.
+```
+
+This is the key insight: **Claude can critique its own output against the original samples and improve the skill file.**
+
+---
+
+# Part 3: Build LinkedIn Ghost Writer + Swap In YOUR Voice (20 min)
+
+## Step 1: Build the LinkedIn Skill (Faster This Time)
+
+You know the pattern now. Ask Claude to build the second skill:
+
+```
+Using the same voice fingerprint, build a slash command skill file for writing LinkedIn posts in Nisha's voice. Save it as .claude/commands/linkedin-ghostwriter.md.
+
+LinkedIn posts are different from emails — they need a scroll-stopping hook, shorter paragraphs, and a closing question that drives engagement. Adapt Nisha's voice patterns to the LinkedIn format while keeping her core identity.
+
+Include $ARGUMENTS, post type guidance, formatting rules for LinkedIn, and a "what to never do" section.
+```
+
+## Step 2: Test the LinkedIn Skill
+
+```
+/linkedin-ghostwriter Write a post about how GreenGrid just completed their first pilot in Southeast Asia — a 40-story office tower in Singapore that saw 19% energy reduction in 6 weeks. This is a milestone because it proves the technology works outside India. Keep it genuine, not braggy.
+```
+
+**Check**: Does it have a scroll-stopping opening? Does it end with a real question? Does it sound like Nisha's LinkedIn posts, not a generic corporate announcement?
+
+---
+
+## THE SWAP: Your Voice Now
+
+This is the part where it gets personal.
+
+### Option A: You Have Writing Samples (Preferred)
+
+If you have 5+ emails you've written (check your Sent folder), paste them into the conversation:
+
+```
+I'm going to paste 5 of my own emails below. I want you to analyze my writing voice the same way you analyzed Nisha's — identify my distinctive patterns, create a voice fingerprint, and then rebuild the email-ghostwriter.md skill file to match MY voice instead of Nisha's.
+
+Here are my emails:
+
+[Paste email 1]
+
+---
+
+[Paste email 2]
+
+---
+
+[Paste email 3]
+
+---
+
+[Paste email 4]
+
+---
+
+[Paste email 5]
+```
+
+**Tips for choosing your emails:**
+- Pick emails from different contexts (formal, casual, good news, bad news)
+- Don't cherry-pick your "best" writing — include normal everyday emails
+- Remove sensitive information (client names, financial details) but keep the voice intact
+- Longer emails give Claude more signal than one-liners
+
+### Option B: No Writing Samples Handy
+
+If you don't have emails ready, dictate your style to Claude:
+
+```
+I don't have writing samples handy, so I'll describe my writing style. Build a voice profile from this description:
+
+- [How would you describe your writing tone?]
+- [Do you use formal or casual language? Contractions?]
+- [How do you typically open emails?]
+- [Any phrases or words you use frequently?]
+- [How do you close emails?]
+- [Any punctuation habits? (em-dashes, ellipses, exclamation marks)]
+- [What do you NEVER want your emails to sound like?]
+```
+
+Option A will produce a more accurate skill file, but Option B is a perfectly good starting point that you can refine over time.
+
+### Step 3: Rebuild the Skill
+
+After Claude analyzes your voice (or your description), tell it:
+
+```
+Now rebuild .claude/commands/email-ghostwriter.md to match MY voice instead of Nisha's. Keep the same structure but replace all the voice patterns with mine.
+```
+
+### Step 4: Test on a Real Email
+
+Think of an email you actually need to write this week. Use the skill:
+
+```
+/email-ghostwriter [Describe the email you actually need to write]
+```
+
+**The moment of truth**: Does it sound like you? Not perfect-you, but recognizably-you?
+
+If it's close but not quite right, tell Claude what's off:
+
+```
+That's close, but I would never [specific thing]. I tend to [your actual habit]. Update the skill file to reflect this.
+```
+
+### Step 5: LinkedIn (If You Post)
+
+If you use LinkedIn, repeat the process:
+
+```
+Now rebuild .claude/commands/linkedin-ghostwriter.md for my voice. [Paste LinkedIn posts or describe your style]
+```
+
+If you don't post on LinkedIn, use this time to refine your email skill further. More iteration = better results.
+
+---
+
+# Part 4: Compare, Refine, Make Permanent (15 min)
+
+## Step 1: Compare Against the Reference
+
+Now you can peek at the reference files:
+
+```
+Read the files in reference-skills/ and compare them against my skill files in .claude/commands/. What are the key differences? What did the reference files include that mine are missing? What did mine include that the reference files don't have?
+```
+
+Neither version is "correct" — the reference files are one good approach. Your files might be better in some areas. The comparison is about learning, not scoring.
+
+## Step 2: The A/B Test
+
+This is the most convincing demonstration of what skills can do:
+
+```
+Write the same email two ways:
+
+First, write a follow-up email to a client named Sarah Chen who attended our product demo last week. She seemed interested but had concerns about implementation timeline. We can do a phased rollout starting with one building.
+
+Write it ONCE using my /email-ghostwriter skill.
+
+Then write it AGAIN as a generic, well-written professional email WITHOUT using the skill — just write it like a standard AI assistant would.
+
+Show both versions side by side.
+```
+
+**Look at them side by side.** The skill version should sound like a specific human. The generic version should sound like... AI. This is the difference a skill file makes.
+
+## Step 3: Make It Permanent
+
+Your skills currently live in this project's `.claude/commands/` directory. They'll only work when you're in this project folder. To make them available everywhere:
+
+```bash
+# Create global commands directory if it doesn't exist
+mkdir -p ~/.claude/commands
+
+# Copy your skills to the global location
+cp .claude/commands/email-ghostwriter.md ~/.claude/commands/
+cp .claude/commands/linkedin-ghostwriter.md ~/.claude/commands/
+```
+
+Now `/email-ghostwriter` and `/linkedin-ghostwriter` will work in ANY project you open with Claude Code.
+
+**Project vs Global — when to use which:**
+
+| Location | Path | When to Use |
+|----------|------|-------------|
+| Project | `.claude/commands/` | Skills specific to one project (e.g., "generate API docs for this codebase") |
+| Global | `~/.claude/commands/` | Skills you want everywhere (e.g., your ghost writer, meeting notes formatter) |
+
+## Step 4: Brainstorm More Skills
+
+You've now built two skills and learned the pattern. What else could Claude build for you?
+
+```
+Based on the skill-building pattern we've used in this session (writing samples → voice analysis → skill file → test → iterate), brainstorm 5 other slash commands I could build for my daily work. Be specific and creative — think about repetitive writing tasks I probably do every week.
+```
+
+Some ideas to get you thinking:
+- `/meeting-followup` — Generates follow-up emails from meeting notes
+- `/code-review` — Reviews code in your team's feedback style
+- `/weekly-update` — Writes your weekly status update in your voice
+- `/slack-response` — Drafts Slack messages matching your team's communication style
+- `/job-description` — Writes job postings in your company's voice
+
+---
+
+## Takeaways
+
+### What Makes a Great Skill File
+
+| Do This | Not This |
+|---------|----------|
+| Specific patterns with examples: "Uses em-dashes for asides" | Vague instructions: "Write naturally" |
+| Concrete numbers: "Paragraphs of 1-3 sentences" | Ambiguous ranges: "Keep it concise" |
+| "Never" list with specific anti-patterns | No guardrails — Claude will default to generic |
+| Format-specific guidance (email vs post) | One-size-fits-all instructions |
+| `$ARGUMENTS` for flexible input | Hardcoded topics or recipients |
+
+### The Skill-Building Habit
+
+Here's a simple rule:
+
+> **If you give Claude the same instructions twice, make it a skill.**
+
+Every time you find yourself typing "write this in a casual tone" or "make it sound more direct" or "don't use corporate jargon" — that's a skill waiting to be built. Capture it once, use it forever.
+
+### The Repeatable Pattern
+
+The process you used today works for any writing voice:
+
+1. **Gather samples** — 5-10 examples of the target voice across different contexts
+2. **Analyze** — Claude identifies distinctive patterns and creates a voice fingerprint
+3. **Build** — Convert the fingerprint into a skill file with `$ARGUMENTS`
+4. **Test** — Generate content and compare against original samples
+5. **Iterate** — Claude critiques its own output and refines the skill
+
+This works for your voice, your CEO's voice, your client's voice, your company's brand voice — anyone whose writing you can collect samples of.
+
+### Where Your Skills Live
+
+```
+Project-level (this project only):
+  .claude/commands/email-ghostwriter.md
+  .claude/commands/linkedin-ghostwriter.md
+
+Global (all projects):
+  ~/.claude/commands/email-ghostwriter.md
+  ~/.claude/commands/linkedin-ghostwriter.md
+```
+
+---
+
+## Bonus: If You Have Time
+
+### Build a Meeting Follow-Up Skill
+
+If you finished early, try building one more skill from scratch:
+
+```
+Build a new slash command at .claude/commands/meeting-followup.md that takes meeting notes as $ARGUMENTS and generates a follow-up email in my voice. It should:
+
+- Summarize key decisions and action items
+- Use my writing voice (from the email-ghostwriter skill)
+- Assign clear owners and deadlines for each action item
+- End with a question about the next meeting or next steps
+
+Test it with notes from your last meeting.
+```
+
+This reinforces the pattern: identify a repetitive writing task → build a skill → test → iterate.
+
+---
+
+## Quick Reference
+
+**Create a project skill:**
+```bash
+mkdir -p .claude/commands
+# Then ask Claude to create a .md file in that directory
+```
+
+**Create a global skill:**
+```bash
+mkdir -p ~/.claude/commands
+# Copy or create .md files in that directory
+```
+
+**Use a skill:**
+```
+/skill-name your arguments here
+```
+
+**The `$ARGUMENTS` placeholder:**
+Whatever you type after `/skill-name` replaces `$ARGUMENTS` in the skill file.
+
+**Iterate on a skill:**
+```
+Read the skill file at .claude/commands/[name].md, test it with a prompt, identify what's off, and update the skill file.
+```
+
+---
+
+*You've just built your first AI ghost writer. The draft it produces isn't the final product — you are. But now your editing starts from something that already sounds like you, not like a robot. That's the difference.*
