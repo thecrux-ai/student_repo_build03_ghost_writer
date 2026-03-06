@@ -21,8 +21,8 @@ In the next 60 minutes, you'll teach Claude Code to write like a specific person
 | Part | Time | What You'll Do |
 |------|------|----------------|
 | Part 1 | 10 min | Claude reads Arjun's writing samples and discovers his voice patterns |
-| Part 2 | 15 min | Build and test an email ghost writer skill |
-| Part 3 | 20 min | Build LinkedIn ghost writer + swap in YOUR voice |
+| Part 2 | 15 min | Build both ghost writer skills (email + LinkedIn) and test them |
+| Part 3 | 20 min | Swap in YOUR voice |
 | Part 4 | 15 min | Compare, refine, and make skills permanent |
 
 ---
@@ -118,7 +118,7 @@ If Claude missed something, tell it! This is the iteration process.
 
 ---
 
-# Part 2: Build the Email Ghost Writer Skill (15 min)
+# Part 2: Build Both Ghost Writer Skills (15 min)
 
 ## How Slash Commands Work (60-second explainer)
 
@@ -133,6 +133,8 @@ Claude Code slash commands (also called "skills") are markdown files that live i
 Example: If `email-ghostwriter.md` contains "Write an email about: $ARGUMENTS" and you type `/email-ghostwriter follow up with Deepak about the renewal`, Claude sees "Write an email about: follow up with Deepak about the renewal".
 
 That's it. No code. No configuration. Just a markdown file in the right folder.
+
+**Important: Slash commands are loaded when Claude Code starts.** If you create a new command file during a session, you need to exit Claude Code and restart it before the new slash command will be available. This is a one-time thing — after restarting, the command works for all future sessions.
 
 ## Step 1: Create the Commands Directory
 
@@ -156,7 +158,30 @@ The file should be saved as .claude/commands/email-ghostwriter.md and include:
 Make it detailed enough that someone who has never read Arjun's writing could use this skill and produce an email that sounds like him.
 ```
 
-## Step 3: Test — Acme Follow-Up Email
+## Step 3: Build the LinkedIn Skill
+
+Now build the second skill — same voice, different format:
+
+```
+Using the same voice fingerprint, build a slash command skill file for writing LinkedIn posts in Arjun's voice. Save it as .claude/commands/linkedin-ghostwriter.md.
+
+LinkedIn posts are different from emails — they need a scroll-stopping hook, shorter paragraphs, and a closing question that drives engagement. Adapt Arjun's voice patterns to the LinkedIn format while keeping his core identity — especially the data-first framing, the honest self-awareness, and the signature phrases.
+
+Include $ARGUMENTS, post type guidance, formatting rules for LinkedIn, and a "what to never do" section.
+```
+
+## Step 4: Restart Claude Code
+
+Slash commands are loaded when Claude Code starts — so your new commands won't be available until you restart. The good news: we built both skills before restarting, so one restart loads both `/email-ghostwriter` and `/linkedin-ghostwriter`.
+
+```bash
+# Type /exit or press Ctrl+C to leave Claude Code, then reopen it:
+claude
+```
+
+Once Claude restarts, both slash commands will be ready to use.
+
+## Step 5: Test — Acme Follow-Up Email
 
 Time to see if it works. Use the slash command:
 
@@ -173,7 +198,7 @@ Time to see if it works. Use the slash command:
 - [ ] Ends with clear next steps and a specific question
 - [ ] Honest and direct tone — no jargon
 
-## Step 4: Test — Difficult Conversation with Suresh
+## Step 6: Test — Difficult Conversation with Suresh
 
 Different email type, same voice:
 
@@ -183,7 +208,17 @@ Different email type, same voice:
 
 **Compare**: Does the voice hold across a completely different email type? The empathy-to-directness ratio should shift (more empathy here since it's a big ask), but the core patterns should remain.
 
-## Step 5: Iterate
+## Step 7: Test — LinkedIn Post
+
+Now test the LinkedIn skill:
+
+```
+/linkedin-ghostwriter Write a post about how Project Alpha (self-serve onboarding) just hit 82% completion rate after the team pivoted to video walkthroughs based on Meera's user research. This is a win for listening to data over assumptions. Keep it honest — mention the 34% completion rate they started with and what Arjun got wrong initially.
+```
+
+**Check**: Does it have a scroll-stopping opening? Does it end with a real question? Does it sound like Arjun's LinkedIn posts, not a generic corporate announcement?
+
+## Step 8: Iterate
 
 Claude will probably get 80% right on the first try. Let's improve it:
 
@@ -195,29 +230,7 @@ This is the key insight: **Claude can critique its own output against the origin
 
 ---
 
-# Part 3: Build LinkedIn Ghost Writer + Swap In YOUR Voice (20 min)
-
-## Step 1: Build the LinkedIn Skill (Faster This Time)
-
-You know the pattern now. Ask Claude to build the second skill:
-
-```
-Using the same voice fingerprint, build a slash command skill file for writing LinkedIn posts in Arjun's voice. Save it as .claude/commands/linkedin-ghostwriter.md.
-
-LinkedIn posts are different from emails — they need a scroll-stopping hook, shorter paragraphs, and a closing question that drives engagement. Adapt Arjun's voice patterns to the LinkedIn format while keeping his core identity — especially the data-first framing, the honest self-awareness, and the signature phrases.
-
-Include $ARGUMENTS, post type guidance, formatting rules for LinkedIn, and a "what to never do" section.
-```
-
-## Step 2: Test the LinkedIn Skill
-
-```
-/linkedin-ghostwriter Write a post about how Project Alpha (self-serve onboarding) just hit 82% completion rate after the team pivoted to video walkthroughs based on Meera's user research. This is a win for listening to data over assumptions. Keep it honest — mention the 34% completion rate they started with and what Arjun got wrong initially.
-```
-
-**Check**: Does it have a scroll-stopping opening? Does it end with a real question? Does it sound like Arjun's LinkedIn posts, not a generic corporate announcement?
-
----
+# Part 3: Swap In YOUR Voice (20 min)
 
 ## THE SWAP: Your Voice Now
 
@@ -354,7 +367,7 @@ cp .claude/commands/email-ghostwriter.md ~/.claude/commands/
 cp .claude/commands/linkedin-ghostwriter.md ~/.claude/commands/
 ```
 
-Now `/email-ghostwriter` and `/linkedin-ghostwriter` will work in ANY project you open with Claude Code.
+Now `/email-ghostwriter` and `/linkedin-ghostwriter` will work in ANY project you open with Claude Code. (Remember: restart Claude Code after copying for the commands to load.)
 
 **Project vs Global — when to use which:**
 
@@ -460,6 +473,8 @@ mkdir -p .claude/commands
 mkdir -p ~/.claude/commands
 # Copy or create .md files in that directory
 ```
+
+**After creating or copying a skill file, restart Claude Code** — slash commands are loaded at startup and won't appear until you exit and reopen.
 
 **Use a skill:**
 ```
