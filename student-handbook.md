@@ -29,7 +29,13 @@ In the next 60 minutes, you'll teach Claude Code to write like a specific person
 
 ## Before You Start
 
-Make sure you're in the repository directory:
+Clone the repository to your machine (if you haven't already):
+
+```bash
+git clone https://github.com/thecrux-ai/student_repo_build03_ghost_writer.git
+```
+
+Navigate into the repository:
 
 ```bash
 cd student_repo_build03_ghost_writer
